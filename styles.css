@@ -5,39 +5,39 @@
  * hosted on GitHub, https://GitHub.com/Naereen/Nginx-Fancyindex-Theme
  */
 
-* {
-    font-family: 'Verdana', sans-serif;
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+/*RGB滚动条*/
+::-webkit-scrollbar{
+  background: linear-gradient( #0055ff,#ff7491,#dc3545);
 }
 
+::-webkit-scrollbar {
+  width: .3rem;
+  height: .8rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #90a1ad;
+}
+/*RGB滚动条 END*/
+
+/*设置背景颜色*/
 html {
 	color: #61666c;
-	font-weight: 300;
-	font-size: 1em;
-	line-height: 2em;
 }
 
+/*设置字体颜色、背景颜色*/
 body {
-	margin: 0 auto;
-	padding-top: 20px;
-	max-width: 800px;
-	background-color: #2f343f;
-	color: #FFFFFF
+	background-color: #424242;
+	color: #FFFFFF;
 }
 
 thead {
-	font-weight: 200;
-	font-size: 1.2em;
+	font-weight: 2em;
+	font-size: 1.5em;
 }
 
 h1 {
-	font-weight: 200;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	line-height: 3em;
 }
 
@@ -66,12 +66,10 @@ a.clear, a.clear:link, a.clear:visited {
 }
 
 input {
-	margin: 0 auto;
 	font-size: 100%;
 	vertical-align: middle;
 	*overflow: visible;
 	line-height: normal;
-    font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	font-weight: 300;
 	line-height: 18px;
@@ -111,12 +109,12 @@ input::-moz-focus-inner {
 
 #search {
 	color: #FFFFFF;
-	background-color: #262A32;
+	background-color: #424242;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 250px;
-	margin-top: 20px;
+	width: 20em;
+	margin-top: 0.5em;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
@@ -129,10 +127,12 @@ input::-moz-focus-inner {
 }
 
 table {
+    position:relative;
+    width:100%;
 	border-collapse: collapse;
 	font-size: 0.9em;
-	max-width: 100%;
-	margin: 20px auto 0;
+	flex: 0 0 100%;
+	margin: 1em auto 0;
 }
 
 tr {
@@ -141,7 +141,7 @@ tr {
 }
 tr:hover td {
 	color: #FFFFFF;	
-	background: #3D4351;
+	background: #C70039;
 }
 tr td:first-of-type {
 	padding-left: 10px;
@@ -165,7 +165,7 @@ th + th + th + th {
 }
 
 td {
-	padding: 5px 0;
+	padding: 0.5em 0;
 	outline: 0;
 	border: 0;
 	border-bottom: 1px solid #edf1f5;
@@ -179,21 +179,24 @@ td {
 }
 td:last-child,th:last-child {
 	text-align: right;
-	padding-right: 0;
+	padding-right: 0.5em;
 }
 td a {
 	display: block;
 }
 
-.parent a:hover {
-	color: #2a2a2a;
+a:hover {
+	color: #DAF7A6;
 }
 
 footer {
-	font-size:12px;
+	font-size:0.8em;
 	text-align:center;
 }
 footer a {
 	text-decoration: underline;
 	color:#FFFFFF;
+}
+li{ 
+    word-wrap: break-word;
 }

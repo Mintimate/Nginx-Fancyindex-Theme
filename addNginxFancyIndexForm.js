@@ -8,7 +8,7 @@ var input = document.createElement('input');
 
 input.name = 'filter';
 input.id = 'search';
-input.placeholder = 'Type to search...';
+input.placeholder = '搜索一下╮(￣▽￣"")╭...';
 
 form.appendChild(input);
 
